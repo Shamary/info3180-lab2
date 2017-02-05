@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block main %}
+<h1>Profile</h1>
+<hr>
+
+<div class="img_div">
+    <img src="{{url_for('static',filename='meatboy.png')}}"></img>
+</div>
+<div class="card">
+    <div class="title_div"><label><strong>Super Meat Boy</strong></label></div>
+    <div class="clayer"><label>Today's date is {{ timefunc }}</label></div>
+    <div class="clayer">
+        <label><strong>Username:</strong> meatboy</label><br>
+        <label><strong>ID Number:</strong> 00001</label><br>
+        <label><strong>Age:</strong> 9</label><br>
+        <label><strong>Gender:</strong> Male</label><br>
+    </div>
+    <div class="msg"><label>I will rescue bandage girl!</label></div>
+</div>
+
+{% endblock %}
